@@ -1,8 +1,6 @@
 import Foundation
 
-
-struct Country{
-    
+struct Country {
     var name: String
     var capital: String
     var officialLanguage: String
@@ -13,5 +11,4 @@ struct Country{
     var image2: String
     var price: Double
     var description: String
-    
 }

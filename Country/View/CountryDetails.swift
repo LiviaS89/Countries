@@ -1,13 +1,11 @@
 import SwiftUI
 
 struct CountryDetails: View {
-    
     var country: Country
     
     @State var opinion = ""
     
     var body: some View {
-        
         ZStack {
             Color.gray.opacity(0.2)
             
@@ -23,17 +21,14 @@ struct CountryDetails: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
-                
                 Text (country.touristAttraction)
                     .bold()
                     .foregroundColor(.orange)
                     .font(Font.system(size: 20))
                 
-                
                 Text (country.description)
                     .font (Font.system(size: 12))
-                
-                
+                    .multilineTextAlignment(.leading)
                 
                 Text ("Price: \(country.price,specifier: "%.2f") Euro")
                     .foregroundColor(.gray)
@@ -50,15 +45,12 @@ struct CountryDetails: View {
                         .italic()
                 }
                 
-                
-                HStack{
-                    
+                HStack {
                     Spacer ()
                     
                     Button ("Add as favourite") {
                         print ("Completed!")
                     }
-                    
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     .background(Color.blue)
@@ -69,17 +61,9 @@ struct CountryDetails: View {
                     Spacer()
                 }
                 
-                
-                
-                
                 Spacer ()
             }
-            
             .padding(.horizontal, 10)
-            
         }
-        
-        
     }
-    
 }

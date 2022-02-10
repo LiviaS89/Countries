@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct TextAppearance: View {
-    
     var text : String
     var text2: String
     var image: String
@@ -9,26 +8,17 @@ struct TextAppearance: View {
     var image3: String
     
     var body: some View {
-        
-        
-        
-        
         VStack ( spacing: 16) {
-            
-            
             HStack {
-                
                 Spacer ()
-                
+            
                 Image ("Boy")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 140, height: 120, alignment: .trailing)
-                
             }
             
             Text("Hello, visitor!".uppercased())
-                
                 .bold()
                 .underline()
                 .foregroundColor(.blue)
@@ -41,7 +31,6 @@ struct TextAppearance: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 100)
                 .padding()
-            
             
             Button (action: {}, label: {
                 NavigationLink (
@@ -56,9 +45,7 @@ struct TextAppearance: View {
             .foregroundColor(.black)
             .clipShape(Capsule())
             
-            HStack{
-                
-                
+            HStack {
                 Image ("Girl")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -66,12 +53,9 @@ struct TextAppearance: View {
                 
                 Spacer ()
             }
-            
+
             Spacer()
-            
-            
         }
     }
-    
 }
 
