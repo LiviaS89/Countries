@@ -8,7 +8,7 @@ struct TextAppearance: View {
     var image3: String
     
     var body: some View {
-        VStack ( spacing: 16) {
+        VStack (spacing: 16) {
             HStack {
                 Spacer ()
             

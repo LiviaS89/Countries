@@ -30,7 +30,7 @@ struct CountryDetails: View {
                     .font (Font.system(size: 12))
                     .multilineTextAlignment(.leading)
                 
-                Text ("Price: \(country.price,specifier: "%.2f") Euro")
+                Text ("Price: \(country.price,specifier: "%.2f") RON")
                     .foregroundColor(.gray)
                     .font(Font.system(size: 15))
                     .fontWeight(.medium)
