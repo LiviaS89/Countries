@@ -17,17 +17,17 @@ struct Countries: View {
         
         
         
+        
+        List (countries, id: \.name){ country in
             
-            List (countries, id: \.name){ country in
             
-                
-                NavigationLink(destination: CountryDetails (country: country)){
-                    CountryRows (country: country)
-                }
+            NavigationLink(destination: CountryDetails (country: country)){
+                CountryRows (country: country)
             }
-            
-            .navigationTitle("My Travel Diary")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        
+        .navigationTitle("My Travel Diary")
+        .navigationBarTitleDisplayMode(.inline)
         
         
         
