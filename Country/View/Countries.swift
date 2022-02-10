@@ -1,10 +1,3 @@
-//
-//  Countries.swift
-//  Country
-//
-//  Created by Administrator on 09.01.2022.
-//
-
 import SwiftUI
 
 struct Countries: View {

@@ -1,10 +1,3 @@
-//
-//  TextAppearance.swift
-//  Country
-//
-//  Created by Administrator on 09.01.2022.
-//
-
 import SwiftUI
 
 struct TextAppearance: View {
